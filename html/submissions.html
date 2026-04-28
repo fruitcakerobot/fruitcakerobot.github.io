@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title> Submit Your Own Game Reviews </title>
+		<meta name="description" content="Submission form for your own game reviews">
+		<meta name="keywords" content="indie, game, review, rating, opinion, ranking">
+		<meta name="author" content="Mandy Baur">
+		<link href="../css/styles.css" type="text/css" rel="stylesheet">
+	</head>
+	
+	<body>
+	
+		<div class="mynav" id="submissionsnav">
+		<ul>
+			<li> <a href="../index.html">Home</a></li>
+			<li> <a href="about.html">About</a></li>
+			<li> <a href="submissions.html">Submit Reviews</a></li>
+			<li> <a href="resources.html">Resources</a></li>
+		</ul>
+		</div> <!-- end of submissions navigation panel -->
+	
+		<h1 class="pagetitle">Submit Your Own Game Reviews!</h1>
+			<p> Have a game you want to share? Let me know your opinion! </p>
+		
+			<hr>
+			
+		<div class="submission">	
+	
+		<h2> Game Review Submission </h2>
+		<form action="action.html" method="get">
+			<fieldset>
+				<legend> User Information </legend>
+				<label>Username:<br>
+				<input type="text" name="username"></label><br>
+				<label> Email: <br>
+				<input type="text" name="email"></label><br>
+			</fieldset>
+				
+			
+			
+			<fieldset>
+			<legend> Game Review </legend>
+			<br>
+			<p> Game title
+				<input type="text" name="gametitle">
+			</p>
+			<br>
+			
+			<p> Hours played
+				<input type="text" name="hoursplayed">
+			</p>
+			
+			<br>
+			
+			<p>Select the gaming platform you played the game on. (Select all that apply) </p>
+				<input type="checkbox" name="platform" value="pcmac"> PC/Mac 
+				<input type="checkbox" name="platform" value="playstation"> PlayStation 
+				<input type="checkbox" name="platform" value="xbox"> Xbox 
+				<input type="checkbox" name="platform" value="switch"> Switch 
+				<input type="checkbox" name="platform" value="iOS"> iOS
+				<input type="checkbox" name="platform" value="android"> Android
+				<input id="submissionplatformotherckbx" type="checkbox" name="platforms" value="Other"> Other 
+			
+			<br>
+			<br>
+				
+			<p> How would you rate the game out of 5, where 1 is poor and 5 is excellent? </p>
+				<input type="radio" name="userrating" value="1"> 1
+				<input type="radio" name="userrating" value="2"> 2
+				<input type="radio" name="userrating" value="3"> 3
+				<input type="radio" name="userrating" value="4"> 4
+				<input type="radio" name="userrating" value="5"> 5
+			
+			<br>
+			<br>
+			
+			<input type="checkbox" name="recommend" value="I recommend this game"> I recommend this game
+			
+			<br>
+			<br>
+			
+			<p> Leave your review below! </p>
+				<textarea name="userreview" cols="100" rows="15"> </textarea>
+			
+			<br>
+			
+			<input id="submit1" type="submit" name="submituserreview" value="Submit Review">
+		
+			</fieldset>
+		
+		</form>
+		
+		</div>
+		
+	</body>
+</html>
+				
+	

@@ -1,0 +1,224 @@
+@font-face {
+	font-family: 'Sugar Maples';
+	src: url('../fonts/sugarmaples.ttf') format('truetype');
+	font-weight: normal;
+    font-style: normal;}
+
+/* @font-face {
+	font-family: 'wahiki';
+	src: url('../fonts/wahiki.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;} 
+	THIS IS NOT WORKING*/
+
+* {
+	font-family: 'Open Sans', sans-serif;}
+
+body {
+		background-image: linear-gradient(rgba(156, 255, 250, 0.7), rgba(156, 255, 250, 0.7)),
+						url("../images/fcr_backgroundimage.png");
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position: center center;
+		background-size: cover, 25% auto;
+		padding-top: 120px;
+		padding-bottom: 50px;
+		}
+		
+
+p {
+	font-size: 1em;
+	max-width: 1800px;
+    margin: 0 auto;
+    padding: 0 20px;}
+
+h2.gamelist {
+font-family: 'Sugar Maples', sans-serif;}
+
+h1 {
+	background-color: #9CFFFA;
+	color: #158A85;}
+	
+.pagetitle {
+	font-family: 'wahiki', sans-serif;}
+
+#important1 {
+	font-size: 400%;}
+	
+h2.homesectiontitle {
+					color: #158A85;}
+
+.mynav {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	height: 60px;
+	width: 100%;
+	background-color: rgba(182, 198, 73, 1);
+	border-color: rgba(126, 141, 23, 1);
+	border-style: dotted;
+	border-width: 10px;
+	padding: 10px;
+	margin-bottom: 10px;
+	margin-right: 0px;}
+	
+/* why is right side of border disappearing? */
+
+.mynav li {
+display: inline;
+flex: 1;
+}
+
+.mynav ul {
+	display:flex;
+}
+
+		
+li>a {
+	color: #FFFFFF;}
+
+/* this is the colore I want for my nav panel: color: #535F02; should i move to .mynav li? */
+
+#resourcelinks li>a {
+	color: black;}
+	
+#important2:hover {
+	color: pink;}
+	
+/* table.cheatsheet {
+	border-width: 30px;
+	border-style: solid;
+	border-image-source: url("../images/fcr_borderimage.png");
+	border-image-slice: 30;
+	border-image-repeat: repeat;} */
+
+
+/* color palette: 
+blue light-dark: (156, 255, 250) (100, 211, 205) (21, 138, 133) (7, 73, 69)
+pink light-dark: (245, 195, 212)(255, 150, 185) (204, 81, 122) (171, 42, 85) (125, 21, 56)
+green light-dark: (182, 198, 73) (126, 141, 23) (83, 95, 2) (50, 57, 0)
+orange light-dark: (255, 159, 28) (189, 122, 32) (119, 82, 33) (84, 58, 24)
+*/
+
+.reviews {
+	max-width: 1800px;
+    margin: 0 auto;
+    padding: 0 20px;}
+	
+.reviewgrid {
+	/* border-style: solid;
+	border-color: green;
+	border-width: 2px; */
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	/* grid-template-rows: 300px 300px; */
+	gap: 10px;
+}
+
+.reviewgridelement {
+	border-style: solid;
+	border-color: red;
+	border-width: 20px;
+	min-width: 0;
+	background-color: rgba(100, 211, 205, 0.5);
+}
+
+.cheatsheet {
+text-align: center;}
+
+#cheatsheettable {
+margin: 0 auto;}
+
+/* stylization for submission form */
+div.submission {
+	border-style: solid;
+	border-width: 10px;
+	border-color: rgba(21, 138, 133, 1);
+	padding: 20px;
+	margin: 20px;
+}
+
+.submission input {
+background-color: rgba(156, 255, 250, 0.5);
+}
+	
+.submission textarea {
+background-color: rgba(156, 255, 250, 0.5);
+}	
+
+#submit1 {
+	background-color: rgba(255, 255, 255, 1);
+	}
+
+.submission input:focus {
+	background-color: rgba(255, 255, 255, 1);
+	}
+	
+.submission textarea:focus {
+	background-color: rgba(255, 255, 255, 1);
+	}
+	
+#submit1:hover {
+	background-color: rgba(21, 138, 133, 1);
+	}
+	
+/*image alignment rule
+
+.imagecenter {
+	display: block;
+margin: 0 auto;}
+
+.imageright {
+	float: right;
+	margin-bottom: 20px;
+}
+
+.videoright {
+	float: right;
+	margin-bottom: 20px;
+}*/
+
+img.small_v {
+	width: 160px;
+}
+
+img.small_h {
+	width: 250px;
+}
+
+#about_gamelists {
+	padding: 20px;
+	margin: 20px;
+}
+
+@media only screen and (max-width: 799px){
+	#genretagp {
+		color:green;
+		background-color:black;
+		border-style: solid;
+		border-color: green;
+		border-width: 10px;
+	}
+}
+
+@media only screen and (min-width: 800px){
+	#genretagp {
+		color:purple;
+		background-color:pink;
+		border-style: solid;
+		border-color: purple;
+		border-width: 10px;
+	}
+}	
+
+@media only screen and (max-width: 767px){
+	.reviewgrid {
+	/* border-style: solid;
+	border-color: green;
+	border-width: 2px; */
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	/* grid-template-rows: 300px 300px; */
+	gap: 10px;
+	}
+}
